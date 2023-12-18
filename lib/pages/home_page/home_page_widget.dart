@@ -129,6 +129,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
                           ),
+                          child: FlutterFlowIconButton(
+                            borderColor: FlutterFlowTheme.of(context).primary,
+                            borderRadius: 20.0,
+                            borderWidth: 1.0,
+                            buttonSize: 40.0,
+                            fillColor: FlutterFlowTheme.of(context).accent1,
+                            icon: Icon(
+                              Icons.arrow_upward_rounded,
+                              color: FlutterFlowTheme.of(context).primaryText,
+                              size: 85.0,
+                            ),
+                            onPressed: () {
+                              print('IconButton pressed ...');
+                            },
+                          ),
                         ),
                         Opacity(
                           opacity: 0.0,
